@@ -1,0 +1,149 @@
+CAHIER DES CHARGES 
+Créations d’application Mobile et Web 
+pour la Gestion des Livraisons de 
+Bouteilles de Gaz 
+Chef de projet : FIREK MAROUNDOU MARIAME 
+Interlocuteur commercial : HILAL
+ SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+ 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+Table des matières 
+ 
+Préambule .................................................................................................................................. 3 
+1. Introduction ........................................................................................................................ 4 
+2. Objectifs du Projet .............................................................................................................. 4 
+3. Besoins Fonctionnels .............................................................................................................. 4 
+3.1 Application Mobile (Pour les Contrôleurs) ........................................................................... 4 
+3.2 Application Web (Pour la Direction) ..................................................................................... 5 
+3.3 Notifications et Alertes ......................................................................................................... 6 
+4. Besoins Techniques ................................................................................................................ 6 
+4.1 Architecture .......................................................................................................................... 6 
+4.2 Intégration et Synchronisation ............................................................................................. 6 
+4.3 Scalabilité .............................................................................................................................. 7 
+5. Livrables .................................................................................................................................. 7 
+6. Planning .................................................................................................................................. 8 
+7. Budget .................................................................................................................................... 8 
+8. Conclusion .............................................................................................................................. 9 
+ 
+  
+Préambule 
+ADIA CONSEILS, créée en 2019, est une entreprise gabonaise spécialisée dans la gestion des 
+systèmes d’information. Basée à Libreville, elle se distingue comme la seule entreprise 
+gabonaise certifiée Odoo. Forte de son expertise, ADIA CONSEILS propose des solutions 
+innovantes adaptées aux besoins des entreprises pour optimiser leurs activités. Les prestations 
+incluent le développement numérique, la création d’applications, la formation technologique, 
+et bien plus encore, comme présenté dans son portefeuille de services. 
+Avec son expertise reconnue dans l’implémentation de systèmes Odoo, ADIA CONSEILS 
+accompagne la quincaillerie dans son projet de transformation numérique pour améliorer la 
+gestion et l’efficacité globale de ses processus. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+1. Introduction 
+L’entreprise, spécialisée dans la vente en gros de bouteilles de gaz (pleines et vides), souhaite 
+développer une application mobile et web pour améliorer le suivi et le contrôle des flux de 
+livraison. Cet outil permettra une gestion optimisée des activités de livraison, du décompte 
+des bouteilles par camion, et du calcul automatique des performances et des salaires des 
+chauffeurs. 
+2. Objectifs du Projet 
+• Assurer un suivi précis des flux de bouteilles (pleines et vides) à chaque livraison. 
+• Automatiser le calcul des salaires des chauffeurs basé sur les ventes réalisées. 
+• Fournir des tableaux de bord pour un suivi global et détaillé de l’activité par chauffeur 
+et par période. 
+• Optimiser la gestion des performances des contrôleurs via une plateforme web. 
+3. Besoins Fonctionnels 
+3.1 Application Mobile (Pour les Contrôleurs) 
+• Décompte des bouteilles : 
+o Enregistrement du nombre de bouteilles pleines et vides pour chaque camion 
+au départ et au retour. 
+o Identification du chauffeur et du camion. 
+• Gestion des flux : 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+o Calcul automatique du nombre de bouteilles vendues (bouteilles pleines au 
+départ – bouteilles vides au retour). 
+o Enregistrement des bouteilles non vendues (pleines au retour). 
+o Suivi des consignes (bouteilles vendues avec contenu). 
+• Accessibilité hors ligne : Capacité d’enregistrer les données en mode hors ligne et 
+synchronisation lors d’une connexion. 
+•  
+3.2 Application Web (Pour la Direction) 
+• Suivi des activités des contrôleurs : 
+o Consultation des enregistrements effectués par les contrôleurs. 
+o Suivi des flux de bouteilles par chauffeur et par camion. 
+• Calcul des salaires : 
+o Automatisation des salaires des chauffeurs en fonction des bouteilles vendues 
+(vides au retour). 
+o Affichage des performances par période (jour, semaine, mois, année). 
+• Gestion des stocks : 
+o Suivi des stocks globaux (pleins et vides). 
+o Rapports détaillés des mouvements de stocks. 
+• Tableaux de bord : 
+o Visualisation des ventes totales par période. 
+o Indicateurs clés : bouteilles vendues, bouteilles non vendues, consignes. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+3.3 Notifications et Alertes 
+• Notifications automatiques pour alerter en cas d’anomalies (par exemple, 
+incohérences dans le décompte). 
+• Alertes pour les retours de bouteilles pleines au-dessus d’un certain seuil. 
+4. Besoins Techniques 
+4.1 Architecture 
+• Application mobile : 
+o Compatible Android et iOS. 
+o Interface simple et intuitive pour les contrôleurs. 
+• Application web : 
+o Accès sécurisé via un système d’authentification. 
+o Compatible avec les navigateurs modernes. 
+4.2 Intégration et Synchronisation 
+• Synchronisation des données entre l’application mobile et la plateforme web en temps 
+réel. 
+• Intégration avec un système de gestion existant si nécessaire. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+4.3 Scalabilité 
+• Capacité à gérer un nombre croissant de chauffeurs, contrôleurs et camions. 
+• Support pour des rapports et tableaux de bord complexes à mesure que l’entreprise se 
+développe. 
+5. Livrables 
+• Application mobile fonctionnelle pour les contrôleurs. 
+• Plateforme web pour le suivi et la gestion des activités. 
+• Documentation utilisateur pour les deux plateformes. 
+• Formation des contrôleurs et du personnel administratif. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+6. Planning 
+1. Analyse des besoins (1 semaine) : 
+o Rencontre avec le client pour identifier les processus actuels et les attentes 
+spécifiques. 
+2. Conception (2 semaines) : 
+o Prototypage de l’interface mobile et web. 
+3. Développement (4 semaines) : 
+o Création des deux plateformes. 
+4. Tests et validation (2 semaines) : 
+o Tests fonctionnels et retours utilisateurs. 
+5. Formation et déploiement (1 semaine) : 
+o Formation du personnel et mise en production. 
+7. Budget 
+• Développement mobile : Selon les fonctionnalités requises. 
+• Développement web : Coût dépendant des rapports et tableaux de bord souhaités. 
+• Maintenance : Estimation annuelle pour la mise à jour et le support technique. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 
+8. Conclusion 
+Ce projet permettra à l’entreprise de mieux contrôler ses flux de bouteilles et d’améliorer la 
+gestion des performances des chauffeurs et des contrôleurs. L’intégration d’une application 
+mobile et web assurera une vision claire et précise des activités quotidiennes tout en 
+simplifiant les processus administratifs. 
+SOCIETE DE PRESTATION DE SERVICES INFORMATIQUES 
+NIF : 48746 R – RCCM : GA-LBV-01-2019-B13-00241 Tél. : (+241) 62 35 92 43 – (+241) 62 23 05 44  
+Banque : UGB – RIB : 400020000490000525170 49 – Email : info@adia-conseils.com 

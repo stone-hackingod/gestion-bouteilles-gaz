@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Gaza Gabon",
+    "displayName": "Gaza Gabon",
+    "slug": "front-gaz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "usesCleartextTraffic": true
+      },
+      "edgeToEdgeEnabled": true,
+      "minSdkVersion": 33,
+      "package": "com.anonymous.frontgaz"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d7339c0e-ff25-4756-8a1f-8a1fc359e82b"
+      }
+    }
+  }
+}
